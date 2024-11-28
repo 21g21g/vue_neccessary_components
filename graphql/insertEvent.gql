@@ -1,0 +1,5 @@
+mutation insertEvent($address:String,$title:String,$venue:String,$price;Int){
+    insert_event(object:{address:$address,title:$title,venue:$venue,price:$price}){
+        id
+    }
+}

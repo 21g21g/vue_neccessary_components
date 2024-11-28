@@ -1,0 +1,7 @@
+query GetEvents($orderBy: [events_order_by!]) {
+  events(order_by: $orderBy) {
+    id
+    venue
+    address
+  }
+}

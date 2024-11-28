@@ -1,0 +1,7 @@
+query myQuery($filter:events_bool_exp){
+  events(where:$filter){
+    price
+    venue
+    address
+  }
+}

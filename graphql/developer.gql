@@ -1,0 +1,18 @@
+query ($filter: courses_bool_exp) {
+  courses(where: $filter) {
+    venue
+    title
+    summary
+    level
+    is_active
+    is_free
+    course_instructors {
+      instructor {
+        name
+        position
+        bio
+        position
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+query MyQuery($filter:events_bool_exp, $limit:Int,$offset:Int){
+  events(where:$filter,limit:$limit,offset:$offset){
+    id
+    address
+    category
+    description
+    venue
+    title
+  }
+  events_aggregate{
+    aggregate{
+      count
+      
+    }
+  }
+  
+}
